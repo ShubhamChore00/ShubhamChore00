@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MY PortFolio</title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <header id="header">
+           <div>
+            <nav>
+                <h3><span>P</span>ort<span>Folio</span></h3> 
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="bi bi-x-lg" onclick="closemenu()"></i>
+                </ul>
+                <i class="bi bi-list" onclick="openmenu()"></i>
+            </nav>
+           </div>
+        </header>
+       <section>
+            <div class="container-1">
+                <div id="heading">
+                    <h3>I AM <span>SHUBHAM CHORE</span> & <br>
+                    I AM A FRONTEND DEVELOPER.</h3>
+                </div>
+            </div>
+            <!---------About-------->
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="./src/shubham.jpg">
+                        </div>
+                        <div class="about-col-2">
+                            <h2 class="sub-title">About Me</h2> 
+                            <p>Accomplished UI Developer with front-end development 
+                                experience supporting engagement with customers.
+                                Practiced expert in Html, Bootstrap, JavaScript, JQuery, and Frameworks. 
+                                Passionate about implementing scalable solutions and Problem Solving. Efficient 
+                                problem solver with skills in teamwork and delivering projects on time.
+                            </p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                                <p class="tab-links" onclick="opentab('training')">Professional Training</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>HTML, CSS and Bootstrap</span><br>Designing responsive Webpages</li>
+                                    <li><span>JavaScript</span><br>Create dynamic and interactive web content</li>
+                                    <li><span>Database</span><br>MongoDB</li>
+                                    <li><span>Server-side scripting</span><br>Node JS</li>
+                                    <li><span>Frameworks</span><br> knowledge in Angular</li>
+                                    <li>Good understanding of overall web design</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>Graduation</span><br>BCCA ( Bachelor of Commerce Computer Application )<br>From G.H Raisoni College Of Commerce & Science Tech. Nagpur (GHRCCST) Affiliated To RTMNU, Nagpur.</li>
+                                    <li><span>HSC</span><br>Nagar parishad Jr.college Arts and Science College katol.</li>
+                                    <li><span>SSC</span><br>Nagar parishad high school, katol.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="training">
+                                <ul>
+                                    <li><span>Full stack Web Development </span><br>Naresh IT Technologies, Hyderabad.</li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!----------Project--------->
+            <div id="portfolio">
+                <div class="container">
+                    <h2 class="sub-title">My Work</h2>
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="./src/chickenlogo.jpg" width="200px" height="400px">
+                            <div class="layer">
+                                <h4>Social Media App</h4>
+                                <p>The app connects you the talented people around the world.
+                                    Download it form play store.
+                                </p>
+                                <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="./src/project1.jpg" width="300px" height="400px">
+                            <div class="layer">
+                                <h4>Music Media App</h4>
+                                <p>The app connects you the talented people around the world.
+                                    Download it form play store.
+                                </p>
+                                <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="./src/project2.jpg" width="300px" height="400px">
+                            <div class="layer">
+                                <h4>Online Shopping App</h4>
+                                <p>The app connects you the talented people around the world.
+                                    Download it form play store.
+                                </p>
+                                <a href="#"><i class="bi bi-box-arrow-up-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <!-------------contact-------------->
+            <div id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div  class="contact-left">
+                            <h3 class="sub-title">Contact Me</h3>
+                            <p><i class="bi bi-envelope"></i> choreshubham58@gmail.com</p>
+                            <p><i class="bi bi-telephone-fill"></i> +91 9156490530</p>
+                            <div class="social-icons">
+                                <a href=""><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-twitter"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                                <a href=""><i class="bi bi-github"></i></a>
+                            </div>
+                            <a href="./src/ShubhamChore CV.pdf" download="" class="btn btn2">Download CV</a>
+                        </div>
+                        <div  class="contact-right">
+                            <form name="submit-to-google-sheet">
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="Email" placeholder="Your Email" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                                <button type="submit" class="btn bnt2">Submit</button>
+                            </form>
+                            <span id="msg"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>copyright © Made By Shubham Chore</p>
+                </div>
+            </div>
+       </section>
+    </body>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";        
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby_Fdf-TP2q3ttxFdOU4nAQID_j2JGrWObBPjfTuEmcbu2bXlIkKYbqis7p9QUdBAcTGw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg= document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {{
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            }})
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</html>
